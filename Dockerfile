@@ -1,4 +1,4 @@
-FROM android-base:latest
+FROM dev-base:latest
 
 WORKDIR /srv/android
 
@@ -6,7 +6,7 @@ WORKDIR /srv/android
 RUN touch /srv/android/.repo
 
 # Clang suite - README determines latest version in oot script
-COPY clang-r353983b /srv/android/prebuilts/clang/host/linux-x86/clang-r353983b
+COPY clang-r349610 /srv/android/prebuilts/clang/host/linux-x86/clang-r349610
 COPY clang-README.md /srv/android/prebuilts/clang/host/linux-x86/README.md
 
 # GCC for cross compile and vdso/32

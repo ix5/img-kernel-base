@@ -1,3 +1,5 @@
+LABEL org.opencontainers.image.source https://github.com/ix5/img-kernel-base
+
 FROM dev-base:latest
 
 WORKDIR /srv/android
